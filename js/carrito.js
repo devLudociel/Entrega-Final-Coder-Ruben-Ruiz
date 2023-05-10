@@ -140,5 +140,9 @@ function comprarCarrito() {
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
+    enviarPago();
+};
 
-}
+function enviarPago(){
+    window.location = "./pago.html";
+};
