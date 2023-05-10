@@ -9,7 +9,7 @@ function credenciales() {
         title: 'Ingesa con:',
         icon: 'info',
         iconColor: '#ecaeae',
-        html: ` Nombre: profesor
+        html: ` Nombre: Profesor
                 <br>
                 password: coder`,
         focusConfirm: false,
@@ -29,7 +29,7 @@ function login(){
         e.preventDefault()
         const user = document.getElementById("user").value,
         password = document.getElementById("password").value;
-        if (user == "profesor" && password == "coder"){
+        if (user == "Profesor" && password == "coder"){
             window.location = "./productos.html"
         }
         else {
