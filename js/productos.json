@@ -1,0 +1,162 @@
+[
+    {
+        "id": "labial-01",
+        "titulo": "Labial Matte",
+        "imagen": "./img/labial-01.png",
+        "categoria": {
+            "nombre": "Labiales",
+            "id": "labial"
+        },
+        "precio": 3
+    },
+    {
+        "id": "labial-02",
+        "titulo": "Labial AOA",
+        "imagen": "./img/labial-02.png",
+        "categoria": {
+            "nombre": "Labial",
+            "id": "labial"
+        },
+        "precio": 3
+    },
+    {
+        "id": "labial-03",
+        "titulo": "Labial AOA matte",
+        "imagen": "./img/labial-03.png",
+        "categoria": {
+            "nombre": "Labial",
+            "id": "labial"
+        },
+        "precio": 3
+    },
+    {
+        "id": "polvo-01",
+        "titulo": "Compacto Colormate",
+        "imagen": "./img/polvo-01.png",
+        "categoria": {
+            "nombre": "Polvos Compactos",
+            "id": "polvo"
+        },
+        "precio": 3.5
+    },
+    {
+        "id": "polvo-02",
+        "titulo": "Compacto Colormate",
+        "imagen": "./img/polvo-02.png",
+        "categoria": {
+            "nombre": "Polvos Compactos",
+            "id": "polvo"
+        },
+        "precio": 3.5
+    },
+    {
+        "id": "polvo-03",
+        "titulo": "Compacto Colormate",
+        "imagen": "./img/polvo-03.png",
+        "categoria": {
+            "nombre": "Polvos Compactos",
+            "id": "polvo"
+        },
+        "precio": 3.5
+    },
+    {
+        "id": "polvo-04",
+        "titulo": "Compacto Colormate",
+        "imagen": "./img/polvo-04.png",
+        "categoria": {
+            "nombre": "Polvos Compactos",
+            "id": "polvo"
+        },
+        "precio": 3.5
+    },
+    {
+        "id": "base-01",
+        "titulo": "Base AOA",
+        "imagen": "./img/base-02.png",
+        "categoria": {
+            "nombre": "Bases",
+            "id": "base"
+        },
+        "precio": 4
+    },
+    {
+        "id": "base-02",
+        "titulo": "Base Colormate",
+        "imagen": "./img/base-01.png",
+        "categoria": {
+            "nombre": "Bases",
+            "id": "base"
+        },
+        "precio": 2.5
+    },
+    {
+        "id": "rubor-01",
+        "titulo": "Rubor Colormate",
+        "imagen": "./img/rubor-01.png",
+        "categoria": {
+            "nombre": "Rubores",
+            "id": "rubor"
+        },
+        "precio": 3
+    },
+    {
+        "id": "Highlighter-01",
+        "titulo": "Glow up AOA",
+        "imagen": "./img/high-01.png",
+        "categoria": {
+            "nombre": "Highlighter",
+            "id": "high"
+        },
+        "precio": 2.5
+    },
+    {
+        "id": "Highlighter-02",
+        "titulo": "Glow up AOA",
+        "imagen": "./img/high-02.png",
+        "categoria": {
+            "nombre": "Highlighter",
+            "id": "high"
+        },
+        "precio": 2.5
+    },
+    {
+        "id": "Highlighter-03",
+        "titulo": "Glow up AOA",
+        "imagen": "./img/high-03.png",
+        "categoria": {
+            "nombre": "Highlighter",
+            "id": "high"
+        },
+        "precio": 4.5
+    },
+    {
+        "id": "Surtido-01",
+        "titulo": "Surtido Colormate",
+        "imagen": "./img/surtido-01.png",
+        "categoria": {
+            "nombre": "Surtido",
+            "id": "surtido"
+        },
+        "precio": 15
+    },
+    {
+        "id": "Surtido-02",
+        "titulo": "Surtido Colormate",
+        "imagen": "./img/surtido-02.png",
+        "categoria": {
+            "nombre": "Surtido",
+            "id": "surtido"
+        },
+        "precio": 14.5
+    },
+    {
+        "id": "Surtido-03",
+        "titulo": "Surtido Colormate & AOA",
+        "imagen": "./img/surtido-03.png",
+        "categoria": {
+            "nombre": "Surtido",
+            "id": "surtido"
+        },
+        "precio": 12.5
+    }
+]
