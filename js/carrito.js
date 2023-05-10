@@ -108,10 +108,12 @@ function vaciarCarrito() {
     Swal.fire({
         title: '¿Estás seguro?',
         icon: 'question',
+        iconColor:'#ecaeae',
         html: `Se van a borrar ${productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0)} productos.`,
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText: 'Sí',
+        confirmButtonColor: '#ecaeae',
         cancelButtonText: 'No'
     }).then((result) => {
         if (result.isConfirmed) {

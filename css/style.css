@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #ecaeae;
-    --clr-main-light: #e1abb4;
-    --clr-white: #ECEAE9;
-    --clr-gray: #E9DED8;
-    --clr-red: #A58A70;
+    --primary-100:#FFDAB9;
+    --primary-200:#dfb28a;
+    --primary-300:#8c633c;
+    --accent-100:#ffbda3;
+    --accent-200:#975f48;
+    --text-100:#000000;
+    --text-200:#615353;
+    --text-300:#fff;
+    --bg-100:#F9AFAF;
+    --bg-200:#eea5a5;
+    --bg-300:#c57f80;
 }
 
 * {
@@ -31,13 +37,13 @@ a {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: var(--clr-main);
+    background-color: var(--bg-100);
 }
 
 aside {
     padding: 2rem;
     padding-right: 0;
-    color: var(--clr-white);
+    color: var(--bg-200);
     position: sticky;
     top: 0;
     height: 100vh;
@@ -49,6 +55,7 @@ aside {
 .logo {
     font-weight: 400;
     font-size: 1.3rem;
+    color: var(--text-300);
 }
 
 .menu {
@@ -60,7 +67,7 @@ aside {
 .boton-menu {
     background-color: transparent;
     border: 0;
-    color: var(--clr-white);
+    color: var(--text-300);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -72,8 +79,8 @@ aside {
 }
 
 .boton-menu.active {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--bg-300);
+    color: var(--primary-100);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -88,7 +95,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-bottom-right-radius: .5rem;
-    box-shadow: 0 1rem 0 var(--clr-white);
+    box-shadow: 0 1rem 0 var(--bg-300);
 }
 
 .boton-menu.active::after {
@@ -100,7 +107,7 @@ aside {
     right: 0;
     background-color: transparent;
     border-top-right-radius: .5rem;
-    box-shadow: 0 -1rem 0 var(--clr-white);
+    box-shadow: 0 -1rem 0 var(--bg-300);
 }
 
 .boton-menu > i.bi-hand-index-thumb-fill,
@@ -113,24 +120,24 @@ aside {
 }
 
 .numerito {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--bg-300);
+    color: var(--text-300);
     padding: .15rem .25rem;
     border-radius: .25rem;
 }
 
 .boton-carrito.active .numerito {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--bg-300);
+    color: var(--text-300);
 }
 
 .texto-footer {
-    color: var(--clr-main-light);
+    color: var(--text-300);
     font-size: .85rem;
 }
 
 main {
-    background-color: var(--clr-white);
+    background-color: var(--bg-300);
     margin: 1rem;
     margin-left: 0;
     border-radius: 2rem;
@@ -138,7 +145,7 @@ main {
 }
 
 .titulo-principal {
-    color: var(--clr-main);
+    color: var(--text-300);
     margin-bottom: 2rem;
 }
 
@@ -154,8 +161,8 @@ main {
 }
 
 .producto-detalles {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--bg-200);
+    color: var(--text-300);
     padding: .5rem;
     border-radius: 1rem;
     margin-top: -2rem;
@@ -171,19 +178,20 @@ main {
 
 .producto-agregar {
     border: 0;
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--bg-300);
+    color: var(--text-300);
     padding: .4rem;
     text-transform: uppercase;
     border-radius: 2rem;
     cursor: pointer;
-    border: 2px solid var(--clr-white);
+    border: 2px solid var(--accent-100);
     transition: background-color .2s, color .2s;
 }
 
 .producto-agregar:hover {
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--accent-100);
+    color: var(--text-300);
+    border: none;
 }
 
 
@@ -197,7 +205,7 @@ main {
 
 .carrito-vacio,
 .carrito-comprado {
-    color: var(--clr-main);
+    color: var(--text-300);
 }
 
 .carrito-productos {
@@ -210,8 +218,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--bg-200);
+    color: var(--text-300);
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
@@ -229,7 +237,7 @@ main {
 .carrito-producto-eliminar {
     border: 0;
     background-color: transparent;
-    color: var(--clr-red);
+    color: var(--accent-200);
     cursor: pointer;
 }
 
@@ -240,10 +248,10 @@ main {
 
 .carrito-acciones-vaciar {
     border: 0;
-    background-color: var(--clr-gray);
+    background-color: var(--bg-100);
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-main);
+    color: var(--text-300);
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -254,9 +262,9 @@ main {
 
 .carrito-acciones-total {
     display: flex;
-    background-color: var(--clr-gray);
+    background-color: var(--bg-100);
     padding: 1rem;
-    color: var(--clr-main);
+    color: var(--text-300);
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -265,9 +273,9 @@ main {
 
 .carrito-acciones-comprar {
     border: 0;
-    background-color: var(--clr-main);
+    background-color: var(--bg-200);
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--text-300);
     text-transform: uppercase;
     cursor: pointer;
     border-top-right-radius: 1rem;
@@ -276,6 +284,7 @@ main {
 
 .header-mobile {
     display: none;
+    color: var(--text-300);
 }
 
 .close-menu {
@@ -296,12 +305,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--clr-main);
+    background-color: var(--bg-200);
     background-image: url(../img/logoDorado.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    color: var(--clr-white);
+    color: var(--text-300);
 }
 
 .contenedor-registro{
@@ -329,7 +338,7 @@ main {
 .mensaje button{
     padding: 1rem;
     font-weight: 400;
-    background-color: var(--clr-white);
+    background-color: var(--text-300);
     border: none;
     outline: none;
     cursor: pointer;
@@ -341,8 +350,8 @@ main {
 }
 
 .mensaje  button:hover{
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--bg-200);
+    color: var(--text-300);
     box-shadow: 6px 6px 10px -1px rgba(230, 221, 222, 0.4),
         -6px -6px 10px -1px rgba(233, 224, 224, 0.7)
 }
@@ -351,7 +360,7 @@ main {
     width: 400px;
     padding: 1rem;
     margin: 2rem;
-    background-color: rgba(225, 171, 171, 0.89);
+    background-color: var(--bg-300);
     text-align: center;
 }
 
@@ -382,8 +391,8 @@ main {
 }
 
 .icono-borde:hover{
-    background-color: var(--clr-white);
-    color: var(--clr-main);
+    background-color: var(--text-300);
+    color: var(--bg-200);
     cursor: pointer;
 }
 
@@ -403,7 +412,7 @@ main {
     outline: none;
     padding: .2rem 0;
     font-size: .9rem;
-    color: var(--clr-white);
+    color: var(--text-300);
 }
 
 .formulario button{
@@ -413,17 +422,17 @@ main {
     padding: .9rem;
     border-radius: 2rem;
     font-weight: 600;
-    background-color: var(--clr-white);
+    background-color: var(--text-300);
     margin-top: 1.5rem;
     font-size: .8rem;
     cursor: pointer;
-    color: var(--clr-main);
+    color: var(--bg-200);
     border-style: none;
 }
 
 .formulario button:hover{
-    background-color: var(--clr-main);
-    color: var(--clr-white);
+    background-color: var(--bg-300);
+    color: var(--text-300);
     box-shadow: 6px 6px 10px -1px rgba(230, 221, 222, 0.4),
         -6px -6px 10px -1px rgba(233, 224, 224, 0.7)
 }
@@ -457,7 +466,7 @@ main {
     aside {
         position: fixed;
         z-index: 9;
-        background-color: var(--clr-main);
+        background-color: var(--bg-200);
         left: 0;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
         transform: translateX(-100%);
@@ -495,12 +504,12 @@ main {
     }
 
     .header-mobile .logo {
-        color: var(--clr-gray);
+        color: var(--text-300);
     }
 
     .open-menu, .close-menu {
         background-color: transparent;
-        color: var(--clr-gray);
+        color: var(--text-300);
         border: 0;
         font-size: 2rem;
         cursor: pointer;
